@@ -782,11 +782,50 @@ p{
 }
 
 .Me_container {
-
+  
+  position: relative;
   background-color: white;
   text-align: center;
   border-radius: 30px;
   margin-bottom: 50px;
+}
+
+.glow::before , .glow::after {
+
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: -5px;
+  background: linear-gradient(45deg , var(--primarycolor2) , white , black);
+  background-size: 400%;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  border-radius: 30px;
+  z-index: -1;
+  animation: animateborder 20s linear infinite;
+
+} 
+
+@keyframes animateborder {
+
+  0% {
+      background-position: 0 0;
+  }
+
+  50% {
+
+    background-position: 400% 0;
+  }
+  
+  100% {
+
+     background-position: 0 0;
+  }
+}
+
+.glow::after {
+
+   filter: blur(40px);
 }
 
 .personalInfo{
