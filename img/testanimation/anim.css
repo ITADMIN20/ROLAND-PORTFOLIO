@@ -8,7 +8,7 @@
   }
   
   .section2 {
-    background-color: pink;
+    background-color: var(--primarycolor4);
     display: flex;
     justify-content: center;
     align-items: center;
