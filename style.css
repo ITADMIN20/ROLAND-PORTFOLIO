@@ -87,8 +87,6 @@ b{
 
     display: flex;
     
-  
-
 }
 
 .profil {
@@ -421,12 +419,11 @@ p{
   width: 100%;
   background: var(--primarycolor3);
   border-radius: 10px;
-  
+
 }
 .skill-bars .bar{
   margin-top: 80px;
   margin-bottom: 80px;
-  
   height: 100px;
   width: 100%;
   text-transform: capitalize;
@@ -465,7 +462,6 @@ p{
     font-weight: 50px;
     font-size: 40px;
   letter-spacing: 5px;
-
 }
 
 .skill-bars .bar .info .htmlbar:hover::after{
@@ -832,7 +828,7 @@ p{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px 70px;
-  margin-top: 14px;
+  margin-top: 20px;
   margin-bottom: 14px;
   padding-bottom: 10px;
   border-bottom: 1px solid var(--primarycolor2);
@@ -940,6 +936,9 @@ button a {
       font-size: 17px;
       font-weight: bold;
 }
+
+
+
 ::-webkit-scrollbar{
 
   background-color: white;
@@ -977,4 +976,323 @@ button a {
 
 .reveal-4 {
   transition-delay: .5s;
+}
+
+
+@media  screen and (max-width: 1650px){
+  
+  .logo{
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--primarycolor2);
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+  
+}  
+
+.navItems li a {
+
+  font-size: 15px;
+  color: var(--primarycolor2);
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.5s;
+}
+ 
+.navItems li a.Active {
+
+    
+  font-weight: bold;
+  font-size: 30px;
+
+
+}
+
+.links a {
+
+  font-size: 25px;
+  color: var(--primarycolor2);
+  margin: 15px 10px;
+  transition: 0.5s;
+  letter-spacing: 2px;
+ 
+}  
+
+.navItems li:hover a, .links a:hover {
+
+  color:  var(--primarycolor);
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.wrapper::before{
+   
+  position: absolute;
+  content: '';
+  height: 450px;
+  width: 450px;
+  border-radius: 50%;
+  left: -12%;
+  top: 40%;
+  background: linear-gradient(45deg, var(--primarycolor),var(--primarycolor4));
+  animation: object1 3s linear infinite;
+  z-index: 0;
+
+}
+
+.wrapper::after{
+   
+  position: absolute;
+  content: '';
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  left: 35%;
+  top: 12%;
+  background: linear-gradient(45deg, var(--primarycolor),var(--primarycolor4));
+  animation: object2 6s linear infinite;
+
+}
+
+.topline {
+
+  display: block;
+  position: relative;
+  font-size: 30px;
+  letter-spacing: 2px;
+  color: var(--primarycolor2);
+}
+
+.topline::after{
+
+  position: absolute;
+  content: '';
+  height: 3px;
+  width: 40px;
+  bottom: 10px;
+  background-color:  var(--primarycolor);
+}
+
+h1{
+
+  display: block;
+  font-size: 50px;
+  font-weight: 900;
+  color: var(--primarycolor2);
+}
+
+.multiText{
+
+  color:  var(--primarycolor);
+  text-transform: capitalize;
+  font-size: 50px;
+}
+
+p{
+
+  display: block;
+  width: 90%;
+  font-size: 20px;
+  color: var(--primarycolor2);
+  line-height: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-transform: capitalize;
+}
+.btns{
+
+  width: 100%;
+  position: relative;
+  left: 0px;
+}
+.btn-home{
+
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  background-color: var(--primarycolor2);
+  padding: 15px;
+  margin: 30px;
+  margin-left: 0px;
+  margin-right: 20px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  box-shadow: 0 15px 10px rgba(0,0,0,0.4);
+  transition: 0.5s;
+  border-radius: 20px;
+  
+}
+
+.btn-home:hover {
+
+  background: linear-gradient(to right, var(--primarycolor2),  var(--primarycolor));
+  font-size: 20px;
+  margin: 0;
+  font-weight: normal;
+
+}
+
+.header h1 {
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, var(--primarycolor2), black);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.skill-bars .bar{
+  margin-top: 80px;
+  margin-bottom: 150px;
+  height: 50px;
+  width: 100%;
+  text-transform: capitalize;
+  font-weight: bolder;
+
+}
+.skill-bars .bar .info span{
+  font-weight: 50;
+  font-size: 25px;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  opacity: 0;
+  padding-right: 30px;
+  padding-left: 30px;
+  animation: showText 2s 1s linear forwards;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.3), 0px 5px 15px rgba(0,0,0,0.2);
+  transform: translateY(-3px);
+  background-color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.skill-bars .bar .info span:hover{
+
+  font-weight: 30px;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.bar .progress-line span{
+  height: 35px;
+  position: absolute;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: linear-gradient(to right, var(--primarycolor2),  var(--primarycolor));
+  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+  transition: 0.1s;
+}
+
+.bar .progress-line span:hover {
+   
+  box-shadow: 0px 10px 10px white, 10px 10px 10px var(--primarycolor2);
+  height: 36px;
+  border-radius: 0px;
+
+ }
+
+ .infoSection h1 {
+
+  color: var(--primarycolor2);
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 5px;
+  position: relative;
+  padding-left: 10px;
+}
+
+
+.infoSection h2{
+
+  font-family: helvetica;
+  font-size: 25px;
+  font-weight: 600;
+  color:  var(--primarycolor);
+  padding: 14px 10px 15px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin-top: 10px;
+
+}
+
+.infoSection .Me {
+
+  color: black;
+  font-size: 15px;
+  line-height: 2.5;
+  text-align: justify;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  font-family: 'poppins', sans-serif;
+  padding-left: 90px;
+  
+}
+
+
+.Me_container {
+  
+  position: relative;
+  background-color: white;
+  text-align: center;
+  border-radius: 30px;
+  margin-bottom: 50px;
+  margin-bottom: 20px;
+}
+
+
+.btn-about {
+  min-width: 150px;
+  padding: 8px 18px;
+  border: 1px solid var(--primarycolor3);
+  border-radius: 25px;
+  font-size: 12px;
+  background-color: white;
+  color: black;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.4s;
+  margin-top: 20px;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.3), 0px 5px 15px rgba(0,0,0,0.2);
+
+}
+
+.btn-about:hover{
+  font-size: 15.2px;
+  letter-spacing: 2px;
+  
+  box-shadow: 0px 3px 15px  var(--primarycolor), 0px 5px 15px  var(--primarycolor);
+}
+
+.skillSection .subject {
+     
+  font-size: 15px;
+  font-weight: thin;
+  color: var(--primarycolor2);
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+
+.progress_bar {
+
+  width: 100%;
+  height: 15px;
+  background-color: var(--primarycolor2);
+  padding: 4px 6px;
+  margin-bottom: 10px;
+  border-top: 1px solid var(--primarycolor3);
+  border-bottom: 1px solid var(--primarycolor3);
+  border-radius: 19px;
+}
 }
