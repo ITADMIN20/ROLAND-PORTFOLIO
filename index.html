@@ -14,6 +14,7 @@
     <title>Portfolio IT-Jr </title>
 </head>
 <body>
+    <section class=" section Home">
     <div class="container">
 
         <nav>
@@ -21,7 +22,7 @@
 
             <ul class="navItems">
                
-                <li><a href="#" class="Active">Home</a></li>
+                <li><a href="#" >Home</a></li>
                 <li><a href="#space0">About</a></li>
                 <li><a href="#space" id="skl">skills</a></li>
                 <li><a href="#">Blog</a></li>
@@ -58,6 +59,8 @@
 
        
     </div> 
+
+  </section>
      
     <div id="space0">
       <h1>cg</h1>
@@ -66,7 +69,7 @@
 
         <h1> ABOUT ME</h1>
     </div>
-  <section class="about reveal" id="about">
+  <section class=" section about reveal" id="about">
 
       <div class="about_container">
       
@@ -146,7 +149,7 @@
       <section id="skills">
         
             
-        <div class="header reveal-1">
+        <div class=" section header reveal-1">
 
             <h1> PROFESSIONAL SKILLS</h1>
         </div>
@@ -229,8 +232,22 @@
  
         menuHamburger.addEventListener('click',()=>{
         navItems.classList.toggle('mobile-menu')
-        })
-        
+        }) 
 </script>
+   
+ <script>
+     const li=document.querySelectorAll("li")
+     const sec=document.querySelectorAll(".section")
+
+     function activeMenu(){
+          let len=sec.length;
+          while(--len && window.scrollY + 97 < sec[len].offsetTop){}
+          li.forEach(ltx => ltx.classList.remove("Active"));
+          li[len].classList.add("Active");
+     }
+     activeMenu();
+     window.addEventListener("scroll", activeMenu);
+     
+ </script>
 </body>
 </html>    

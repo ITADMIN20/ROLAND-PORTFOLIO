@@ -105,28 +105,28 @@ b{
 
 .navItems li a {
 
-    font-size: 20px;
+    font-size: 25px;
     color: var(--primarycolor2);
     letter-spacing: 3px;
     text-decoration: none;
     text-transform: capitalize;
-    transition: 0.5s;
+    transition: 0.8s;
 }
 
-.navItems li a.Active {
-
-    
-    font-weight: bold;
-    font-size: 40px;
-
-
+.Active{
+   
+  font-weight: bold;
+  
+  
 }
+
+
 
 .navItems li:hover a, .links a:hover {
 
     color:  var(--primarycolor);
     font-weight: bold;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 
