@@ -1296,6 +1296,12 @@ p{
   border-bottom: 1px solid var(--primarycolor3);
   border-radius: 19px;
 }
+
+.menu-hamburger{
+
+  display: none;
+}
+
 }
 
 @media  screen and (max-width: 900px){
@@ -1303,8 +1309,8 @@ p{
      .menu-hamburger {
       z-index: 5;
       display: flex;
-      width: 50px;
-      height: 50px;
+      width: 40px;
+      height: 40px;
       margin-top: 20px;
       margin-left: 10px;
      }
@@ -1340,6 +1346,7 @@ p{
      font-size: 20px;
      margin-left: 0px;
      padding-left: 0;
+     margin-top: 0;
     
 }
 
@@ -1391,7 +1398,7 @@ nav{
   justify-content: space-around;
   height: 80px;
   line-height: 80px;
-  position: relative;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -1410,7 +1417,7 @@ nav{
   align-items: center;
   overflow: hidden;
   flex-direction: column;
-  margin-top: 50px;
+  margin-top: 100px;
   padding-left: 0;
   padding-right: 0;
   
@@ -1419,32 +1426,54 @@ nav{
 }
 
 .wrapper::before{
-   display: none;
+   
   position: absolute;
   content: '';
-  height: 550px;
-  width: 550px;
+  height: 150px;
+  width: 150px;
   border-radius: 50%;
   left: -12%;
   top: 40%;
+  margin-top: 15px;
   background: linear-gradient(45deg, var(--primarycolor),var(--primarycolor4));
-  animation: object1 3s linear infinite;
+  animation: object1 12s linear infinite;
   z-index: 0;
 
 }
 
+@keyframes object1 {
+
+  50%{
+
+      left: -13%;
+      top: 45%;
+  }
+  
+}
+
 
 .wrapper::after{
-  display: none;
+  
   position: absolute;
   content: '';
-  height: 100px;
-  width: 100px;
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
   left: 35%;
   top: 12%;
+  margin-left: 180px;
+  margin-top: 60px;
   background: linear-gradient(45deg, var(--primarycolor),var(--primarycolor4));
   animation: object2 6s linear infinite;
+  
+}
+@keyframes object2 {
+
+  50%{
+
+      left: 35%;
+      top: 5%;
+  }
   
 }
 
@@ -1476,7 +1505,7 @@ nav{
 
   display: block;
   position: relative;
-  font-size: 20px;
+  font-size: 25px;
   letter-spacing: 5px;
   color: var(--primarycolor2);
 }
@@ -1488,7 +1517,7 @@ nav{
   width: 25px;
   bottom: 5px;
   background-color:  var(--primarycolor);
-  filter: blur(1px);
+  
 }
 
 h1{
@@ -1560,8 +1589,8 @@ p{
 .btn-home:hover {
   
   background-color: var(--primarycolor2);
-  font-size: 15px;
- 
-  
+  font-size: 14px;
+  margin-right: 30px;
+
 }
   }    
