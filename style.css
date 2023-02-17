@@ -1496,11 +1496,18 @@ nav{
   width: 110%;
   top: -150px;
   right: 50px;
-  animation: animateUser 4s linear infinite;
-  margin-left: 50px;
+  animation: animateUse 4s linear infinite;
+  margin-left: 30px;
   margin-top: 200px;
 
 }
+
+.imgbox #BG {
+
+  box-shadow: 5px -1px 5px 5px rgba(0, 0, 0, 0.5);
+
+}
+
 .topline {
 
   display: block;
