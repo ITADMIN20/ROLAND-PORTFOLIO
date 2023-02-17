@@ -1385,7 +1385,7 @@ p{
 
 .container{
 
-  width: 100%;
+  width: 100vw;
   min-height: 100vh;
   background-color: var(--primarycolor3);
   
@@ -1394,7 +1394,7 @@ p{
 nav{
 
   display: flex;
-  width: 100vw;
+  width: 100%;
   justify-content: space-around;
   height: 80px;
   line-height: 80px;
@@ -1402,7 +1402,7 @@ nav{
   top: 0;
   left: 0;
   right: 0;
-  z-index: 5;
+  z-index: 15;
   background: linear-gradient(to left,white,var(--primarycolor3));
   
 }
@@ -1713,4 +1713,36 @@ p{
   box-shadow: 0px 3px 15px rgba(0,0,0,0.3), 0px 5px 15px rgba(0,0,0,0.2);
 
 }
+
+.imageSection img {
+  display: none;     
+  width: 0px;
+  height: 0px;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+  bottom: 0px;
+  right: 0px;
+  animation: animateUser2 4s linear infinite;
+  box-shadow: -20px 20px 20px rgba(0, 0, 0, 0.5);
+
+
+}
+
+
+.about_contents .imageSection {
+  display: none;
+  position: relative;
+  min-width: 300px;
+  height: 380px;
+}
+
+.skillSection {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px 80px;
+  padding: 0px;
+  
+}
+
   }    
