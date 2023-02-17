@@ -33,6 +33,8 @@
                 <a href="https://wa.me/qr/QVV65VX36NIDC1" target="_blank"><i class="fab fa-whatsapp"></i></a>
                 <a href="https://vm.tiktok.com/ZMYhF79ng/" target="_blank"><i class="fab fa-tiktok"></i></a>
             </div>
+
+            <img src="img/Menu-512.webp" alt="appuyez pour le menu " class="menu-hamburger">
         </nav>
        <div class="wrapper">
         <div class="cols cols0">
@@ -221,6 +223,14 @@
         })
     </script>
       <script type="text/javascript" src="site.js"></script>
-
+      <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navItems = document.querySelector(".navItems")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navItems.classList.toggle('mobile-menu')
+        })
+        
+</script>
 </body>
 </html>    
