@@ -7,6 +7,11 @@
     text-transform: capitalize;
 }
 
+html{
+
+  scroll-behavior: smooth;
+  
+}
 :root  {
 
      --primarycolor:  #7f00ff; 
@@ -1935,5 +1940,27 @@ b{
   color:  var(--primarycolor);
   margin-top: 20px;
 }
+
+}
+
+@media  screen and (max-width: 1075px) and (min-width: 900px){
+
+
+  
+.wrapper::after{
+   
+  position: absolute;
+  content: '';
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  left: 35%;
+  top: 12%;
+  background: linear-gradient(45deg, var(--primarycolor),var(--primarycolor4));
+  animation: object2 6s linear infinite;
+  
+
+}
+
 
 }
