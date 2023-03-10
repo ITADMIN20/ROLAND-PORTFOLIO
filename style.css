@@ -7,6 +7,11 @@
     text-transform: capitalize;
 }
 
+#skill-Mobile{
+
+  display: none;
+}
+
 html{
 
   scroll-behavior: smooth;
@@ -978,6 +983,10 @@ button a {
 }
 
 
+/*Debut des medias queries*/
+
+/*Version 15 pouces*/
+
 @media  screen and (max-width: 1650px){
   
   .logo{
@@ -1301,6 +1310,8 @@ p{
 }
 
 }
+
+/*Version mobile Tablette*/
 
 @media  screen and (max-width: 900px){
 
@@ -1844,6 +1855,93 @@ p{
   cursor: pointer;
   transition: 0.3s;
 }
+
+/*Changement de la partie skills de bares en cercles*/
+
+.skills {
+
+  display: none;
+}
+.skill-bars {
+
+  display: none;
+}
+
+#skill-Mobile{
+
+  display: flex;
+ 
+}
+
+.html-skill{
+
+  width: 160px;
+  height: 160px;
+  position: relative;
+  margin: 50px;
+  border-radius: 50%;
+}
+
+.outer {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #dbdddf, #ffffff);
+  padding: 20px;
+  box-shadow:  13px 13px 100px #aaacae,
+  -13px -13px 100px #ffffff;
+}             
+
+.inner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  box-shadow: inset 22px 22px 20px #c7c9cb,
+            inset -22px -22px 20px #ffffff;
+}
+
+#number{
+  
+  color: #000;
+  letter-spacing: 2px;
+  font-size: large;
+}
+
+.title{
+  font-weight: bold;
+  font-size: 25px;
+  color: var(--primarycolor2);
+}
+
+
+circle{
+
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: anim 2s linear forwards;
+}
+svg {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@keyframes anim {
+
+  100%{
+    stroke-dashoffset: 94;
+  }
+  
+}
+
 }
 
 @media  screen and (max-width: 1480px){
@@ -1923,8 +2021,8 @@ p{
   text-transform: capitalize;
   transition: 0.8s;
 }
-
 }
+
 
 
 @media  screen and (max-width: 1480px){

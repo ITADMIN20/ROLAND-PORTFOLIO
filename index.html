@@ -211,8 +211,46 @@
                 </div>
               </div>
           </div>
+  </section> 
+  <section id="skill-Mobile">
+
+    <div class="html-skill">
+      <div class="outer">
+        <div class="inner">
+          <div id="number">
+            
+          </div>
+          <div class="title">
+            HTML 
+          </div>
+        </div>
+      </div>
+       
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+        <defs>
+           <linearGradient id="GradientColor">
+              <stop offset="0%" stop-color="#7f00ff" />
+              <stop offset="100%" stop-color="#3d535f" />
+           </linearGradient>
+        </defs>
+        <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+     </svg>
+    </div>
   </section>
     
+  <script>
+    let number = document.getElementById("number");
+    let counter = 0;
+    setInterval(() => {
+         
+         if( counter == 80 ) {
+           clearInterval();
+         } else {
+          counter += 1
+          number.innerHTML = counter + "%";
+         } 
+    },20);
+   </script>
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
@@ -249,5 +287,6 @@
      window.addEventListener("scroll", activeMenu);
      
  </script>
+
 </body>
 </html>    
