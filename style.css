@@ -2070,6 +2070,22 @@ svg {
   }
   
 }
+/* Eliminations des animations couteuses pour le mobile*/
+.glow::before , .glow::after {
+
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: -5px;
+  background: linear-gradient(45deg , var(--primarycolor2) , white , black);
+  background-size: 400%;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  border-radius: 30px;
+  z-index: -1;
+  animation: animateborder 20s linear infinite;
+  display: none;
+} 
 }
 
 @media  screen and (max-width: 1480px){
