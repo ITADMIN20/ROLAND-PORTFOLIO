@@ -189,8 +189,8 @@ b{
    
     position: absolute;
     content: '';
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
     left: 35%;
     top: 12%;
@@ -1870,6 +1870,10 @@ p{
 #skill-Mobile{
 
   display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
  
 }
 
@@ -1878,7 +1882,7 @@ p{
   width: 160px;
   height: 160px;
   position: relative;
-  margin: 50px;
+  margin: 15px;
   border-radius: 50%;
 }
 
@@ -1888,8 +1892,9 @@ p{
   border-radius: 50%;
   background: linear-gradient(145deg, #dbdddf, #ffffff);
   padding: 20px;
-  box-shadow:  13px 13px 100px #aaacae,
-  -13px -13px 100px #ffffff;
+  box-shadow: inset 8px 8px 25px #b9babc,
+            inset -8px -8px 25px #ffffff;
+
 }             
 
 .inner{
@@ -1900,8 +1905,9 @@ p{
   height: 120px;
   width: 120px;
   border-radius: 50%;
-  box-shadow: inset 22px 22px 20px #c7c9cb,
-            inset -22px -22px 20px #ffffff;
+  box-shadow:  8px 8px 25px #b9babc,
+             -8px -8px 25px #ffffff;
+
 }
 
 #number{
@@ -1913,7 +1919,7 @@ p{
 
 .title{
   font-weight: bold;
-  font-size: 25px;
+  font-size: 20px;
   color: var(--primarycolor2);
 }
 
@@ -1942,6 +1948,128 @@ svg {
   
 }
 
+
+#circle1{
+
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: anim1 2s linear forwards;
+}
+svg {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@keyframes anim1 {
+
+  100%{
+    stroke-dashoffset: 188.8;
+  }
+  
+}
+
+#circle2{
+
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: anim2 2s linear forwards;
+}
+svg {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@keyframes anim2 {
+
+  100%{
+    stroke-dashoffset: 360.8;
+  }
+  
+}
+
+#circle3{
+
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: anim3 2s linear forwards;
+}
+svg {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@keyframes anim3 {
+
+  100%{
+    stroke-dashoffset: 354;
+  }
+  
+}
+
+
+#circle4{
+
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: anim4 2s linear forwards;
+}
+svg {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@keyframes anim4 {
+
+  100%{
+    stroke-dashoffset: 141;
+  }
+  
+}
+
+
+#circle5{
+
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: anim5 2s linear forwards;
+}
+svg {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@keyframes anim5 {
+
+  100%{
+    stroke-dashoffset: 94;
+  }
+  
+}
 }
 
 @media  screen and (max-width: 1480px){
